@@ -1,0 +1,1 @@
+EMPTYDATA = dict()

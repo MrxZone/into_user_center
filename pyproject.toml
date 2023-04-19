@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "into-user-center"
+version = "0.1.0"
+description = ""
+authors = ["frenude <frenude@gmail.com>"]
+readme = "README.md"
+packages = [{include = "into_user_center"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95.1"
+sqlalchemy = "^2.0.9"
+psycopg2-binary = "^2.9.5"
+uvicorn = "^0.21.1"
+passlib = "^1.7.4"
+python-multipart = "^0.0.6"
+pydantic = "^1.10.7"
+python-dotenv = "^1.0.0"
+snowflake-id = "^0.0.2"
+asyncpg = "^0.27.0"
+greenlet = "^2.0.2"
+tenacity = "^8.2.2"
+alembic = "^1.10.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
