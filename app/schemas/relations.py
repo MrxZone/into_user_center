@@ -12,3 +12,11 @@ class RelationBase(BaseModel):
 
 class RelationUpdate(RelationBase):
     id: int
+
+
+class RelationJSONBase(BaseModel):
+    user_id: int
+    data: str
+
+# class RelationJSONUpdate(RelationJSONBase):
+#     id: int

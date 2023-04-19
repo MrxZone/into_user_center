@@ -1,4 +1,4 @@
-from sqlalchemy import BigInteger, Column, String, text, DateTime, func, Integer, Boolean
+from sqlalchemy import BigInteger, Column, String, text, DateTime, func, Integer, Boolean, JSON
 from app.db.base_class import Base
 
 
@@ -17,3 +17,8 @@ class Relation(Base):
     is_view: bool = Column(Boolean, default=True, server_default=text("true"))
 
 
+class RelationJson(Base):
+    __tablename__ = "relation_json"
+    id: int = Column(Integer, primary_key=True, index=True)
+    user_id: int = Column(Integer)
+    data = Column(JSON)
